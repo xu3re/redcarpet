@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Redcarpet by xu3re</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Redcarpet</h1>
+        <h2>The safe Markdown parser, reloaded.</h2>
+        <a href="https://github.com/xu3re/redcarpet" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>Redcarpet 2是用糖，香料和一切都很好======================================= ===================== Redcarpet是降价处理，闻起来像蝴蝶和爆米花的Ruby库。Redcarpet使用的是一个下拉替代Redcloth的。这是没有的情况下，由于第2版 - 现在有自己的API，但仍保留旧的名称。是的，这并不意味着Redcarpet 2是不向后兼容1.x版本。Redcarpet是由[日落]（<a href="https://www.github.com/vmg/sundown%EF%BC%89%E7%9A%84%E5%BA%93%E3%80%82%E6%82%A8%E5%8F%AF%E8%83%BD%E5%B8%8C%E6%9C%9B%E6%89%BE%E5%87%BA%E6%9B%B4%E5%A4%9A%E7%9A%84%E5%85%B3%E4%BA%8E%E6%97%A5%E8%90%BD%EF%BC%8C%E7%9C%8B%E7%9C%8B%E6%98%AF%E4%BB%80%E4%B9%88%E8%AE%A9%E8%BF%99%E4%B8%AARuby%E5%BA%93%EF%BC%8C%E8%BF%99%E6%A0%B7%E7%9C%9F%E6%A3%92%E3%80%82%E8%BF%99%E4%B8%AA%E5%BA%93%E6%98%AF%E4%BA%BA%E5%86%99%E5%87%BA%E6%9D%A5%E7%9A%84--------------------------------------------">https://www.github.com/vmg/sundown）的库。您可能希望找出更多的关于日落，看看是什么让这个Ruby库，这样真棒。这个库是人写出来的--------------------------------------------</a> ：----------- Redcarpet已经从头开始重写由维森特·马蒂（@ VMG）。你为什么不跟着我在Twitter上吗？，Redcarpet将是不可能的，没有日落库和它的作者（娜塔莎门，维森特·马蒂，和许多真棒贡献）。你完全可以将其安装为创业板----------------------------------- Redcarpet是现成的，作为一个Ruby创业板上市。这将建立一些原生扩展，但，解析器是独立的，不需要安装的库。$ [须藤]创业板安装redcarpet Redcarpet的来源（包括日落作为一个子模块），可在GitHub上：$ git克隆的git :/ / github.com / VMG / redcarpet.git，它就像真正简单易用--- ---------------------------------的Redcarpet库的核心是在的<code>Redcarpet ::降价类。每一个类的实例连接到一个渲染对象的降价类的文件进行分析，并使用附加的渲染器来生成输出。鼓励'降价'的对象被实例化一次所需的设置，之间的解析和重用。，Markdown.new（渲染器，扩展= {}）初始化一个降价解析器渲染 - 渲染对象，继承Redcarpet ::渲染:: Base的。如果给定的对象没有被实例化，该库将使用默认的参数。扩展 - 一个哈希降价的扩展，的解析器将确定的。以下扩展名的接受:: no_intra_emphasis的 - 不解析重点里面的话。字符串，如foo_bar_baz</code>不会产生<code>的&lt;em&gt;标签。：表 - 解析表，PHP降价风格：fenced_code_blocks  - 解析的围栏代码块，PHP降价风格。块分隔的3个或更多的</code>〜<code>或反引号将被视为代码，而不需要进行缩进。在年底开幕围栏的代码块：[自动连结可以添加一个可选的语言名称 - 解析链接，即使它们没有包含在</code>&lt;&gt;<code>字符。HTTP，HTTPS和FTP协议的自动链接将被自动检测。电子邮件地址处理，没有协议的HTTP链接，但开始'WWW'：带删除线 - 解析删除线，PHP降价方式的</code>〜<code>字符的开始标记，删除线，例如</code>〜〜好〜〜坏<code>：lax_spacing  -  HTML块不需要被包围在降价标准是一个空行。space_after_headers  - 总是需要有一个空格之间的哈希在开始的头，它的名字，例如</code>＃这是我的头就不会是一个有效的头。标 - 解析上标<code>^</code>字符后，连续上标嵌套在一起，而复杂的值可以包含在括号，例如<code>这是2 ^（ND）的时间示例：降价= Redcarpet :: Markdown.new（渲染:: HTML Redcarpet ::，自动连结] =&gt; true的，space_after_headers =&gt; TRUE）提供的降价对象是通过</code>降价＃渲染。与中的RedCloth的API不同，呈现的文字作为参数传递，并没有存储在<code>降价</code>实例，鼓励可重用性。降价＃渲染（文本）提供一个附加的渲染文本 - 一个降价文档的例子：markdown.render（“这是*手鼓，的确。”）＃=&gt;“</p><p>降价文件，这是的<em>手鼓&lt; / em&gt;的，确实&lt;/ P&gt;“亲爱的，我收拾你一对夫妇的午餐渲染器------------------------------ -------------------- Redcarpet带有两个内置的渲染器，<code>Redcarpet ::渲染:: HTML</code>和<code>Redcarpet ::渲染:: XHTML，这输出HTML和XHTML。这些渲染器实际上是用C实现的，因此提供了一个辉煌的业绩，数度级快比其他Ruby降价解决方案。所有的渲染标志，以前只适用于HTML输出已经被转移到</code>渲染:: HTML类，并可能启用实例的渲染时，渲染:: HTML.new（render_options = {}）初始化的HTML渲染。下面的标志是::不允许任何用户输入的HTML输出：no_images filter_html  -   - 不产生任何<img>标签：no_links  - 不产生任何<a><code>标签：no_styles  - 不产生任何&lt;STYLE&gt;</code>标签：safe_links_only， - 只生成链接的协议，该协议被认为是安全的：with_toc_data  - 每头在输出HTML，HTML锚可以链接到每一节。：hard_wrap  - 插入HTML<code>&lt;BR&gt;的</code>标签内段的产地在哪里的降价文件有换行符（默认情况下，降价会忽略这些换行）。XHTML  - 输出符合XHTML标签。启用此选项始终在<code>渲染:: XHTML渲染。：link_attributes  - 哈希额外的属性添加到链接方式Rndr = Redcarpet ::渲染:: HTML.new（no_links =&gt; true，则：hard_wrap =&gt; TRUE）的HTML</code>渲染器的替代版本，Redcarpet： ：的“渲染:: HTML_TOC<code>，这将输出在HTML根据降价文档的标头的内容表。此外，抽象基类</code>Redcarpet ::渲染::基础<code>可以用来写一个自定义渲染纯粹是在Ruby中，或扩展现有的渲染。更多信息，请参见下面的部分。你甚至可以自己做饭的------------------------------创建自定义渲染器继承自现有的渲染。内置的渲染器，HTML</code>和<code>XHTML可能延长等：〜〜〜〜〜红宝石＃创建一个自定义渲染器，允许类HTMLwithAlbino Redcarpet ::渲染:: HTML高清block_code（代码突出显示的代码块语），语言Albino.safe_colorize（代码）结束结束减价= Redcarpet :: Markdown.new（HTMLwithAlbino：fenced_code_blocks =&gt; true的）〜〜〜〜〜但是，新的渲染器也可以从头开始创建（见</code>lib / render_man中的联机帮助渲染器的示例实现的。rb）〜〜〜〜〜〜Ruby类的手册页，你这么疯了... &lt;/ p&gt;”）〜〜〜〜〜SmartyPants上顶部已经呈现HTML，和将忽略的HTML标签和内部具体的HTML模块，如<code>&lt;CODE&gt;</code>或<code>&lt;PRE&gt;</code>里面的内容替换。什么？你真的想混合降价渲染？------------------------------------------------？可怕的想法！已经生病指定的降价是不够的;如果你创建的软件渲染器独立，其结果将是完全不可靠的！每个渲染器有它自己的API和其自己的一套扩展：你应该选择一个（它不必是Redcarpet的，尽管这将是伟大的！），编写相应软件，并强制用户安装。这是只有这样，才能有可靠的和可预见的降价输出你的程序。不过，如果主要力量（让我们说，龙卷风或其他自然灾害）迫使你以保持降价的兼容性层，Redcarpet还支持：需要的redcarpet / compat的“需要兼容性库将宣布一个'降价'类与传统的API，例如Markdown.new RedCloth（“这是我的文字”）。to_html类呈现100％符合标准的降价，有0个扩展。虚无缥缈。甚至不要尝试，启用扩展与兼容层，因为这是一个保有量的噩梦，将无法正常工作。与此相关的话题：如果你的降价创业板有一个<code>lib / markdown.rb中</code>的文件，monkeypatches降价​​类，你是一个可怕的人。我只想说。测试-------测试运行速度快了很多无束执行`:)无聊的法律的东西------------------版权所有（c）2011，维森特·马蒂的权限使用，复制，修改和/或分发本软件用于任何目的或不收费，现予批准，前提是上述版权声明和本许可声明出现在所有副本。本软件提供“AS IS”和作者声明不提供关于本软件的适销性和适用性的所有默示保证。在任何情况下，作者均不对因使用，数据或利润损失，无论是在合同，疏忽或其它侵权行为的行动任何特殊，直接，间接或后果性的损害或任何损害，引起或在本软件的使用或性能。</a></em></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/xu3re/redcarpet/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/xu3re/redcarpet/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/xu3re/redcarpet"></a> is maintained by <a href="https://github.com/xu3re">xu3re</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
